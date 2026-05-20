@@ -1,0 +1,357 @@
+/* GLOBAL STYLES */
+
+/* Clean professional blue theme */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #124ba0;
+    color: #333;
+}
+/* FOOTER DESIGN */
+
+footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 10px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    /* Stack hero vertically */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-images {
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    /* Navigation stack */
+    nav ul {
+        flex-direction: column;
+    }
+
+    /* Skills stack */
+    .skills {
+        flex-direction: column;
+    }
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(to right, #020d4e, #0080ff);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* NAVIGATION */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: #222;
+    margin: 0;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00ccff;
+}
+
+/* IMAGE STYLING (FIXED) */
+
+/* Profile image */
+.profile {
+    width: 180px;
+    height: 180px;
+    /* prevents distortion */
+    object-fit: cover;       
+    /* makes it circular */   
+    border-radius: 50%;         
+    border: 3px solid #0055aa;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Logo image */
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* SECTIONS */
+
+section {
+    padding: 30px;
+    margin: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    background: linear-gradient(to right, #f4f6f9, #6cebf9);
+}
+
+/* Center text */
+.hero-text {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #0055aa; /* Sets the text color to black */
+}
+
+.hero-text h2 {
+    color: #0055aa;
+}
+
+/* Images on right */
+.hero-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+/* SKILLS LIST */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills li {
+    background: #0055aa;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* TABLE (IMPORTANT FIX) */
+.skills-table {
+    width: 100%;
+    border-collapse: collapse; /* removes double borders */
+    margin-top: 20px;
+}
+
+.skills-table,
+.skills-table th,
+.skills-table td {
+    border: 2px solid black;
+}
+
+.skills-table th,
+.skills-table td {
+    padding: 10px;
+}
+
+.skills-table th {
+    background-color: #0055aa;
+    color: white;
+}
+
+/* Hover effect for better UI */
+.skills-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* PROJECTS */
+.project {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.02);
+}
+
+/* Project images */
+.project img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.cv-download {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cv-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #000; /* black button */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cv-button:hover {
+  background-color: #444;
+  transform: scale(1.05);
+}
+
+/* HERO layout */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+/* Text on left */
+.hero-text {
+    flex: 1;
+}
+
+/* Image on right */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Vertical oval image */
+.oval-img {
+    width: 120px;          /* narrow */
+    height: 200px;         /* taller → vertical oval */
+    object-fit: cover;     /* prevents distortion */
+    border-radius: 50% / 70%; /* THIS creates oval shape */
+    border: 3px solid #0055aa;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 760px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+.oval-img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.testimonial-card {
+  background-color: #f4f4f4;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.testimonial-card p {
+  font-style: italic;
+}
+
+.testimonial-card h3 {
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+.testimonials {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.testimonial-card {
+  background-color: #f4f4f4;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.testimonial-card p {
+  font-style: italic;
+}
+
+.testimonial-card h3 {
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+/* YOUTUBE VIDEO EMBEDING */
+
+ .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+}
+
+.video-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+} 
+
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.video-container {
+    position: relative;
+    width: 80%;              /* controls size */
+    max-width: 800px;        /* prevents it from getting too big */
+    padding-bottom: 56.25%;  /* 16:9 ratio */
+}
+
+.video-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,106 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Gadelhak Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+         <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<form action="https://formspree.io/f/mjgpadde" method="POST">
+    <fieldset>
+        <legend>Contact Me</legend>
+
+        <label>Name:</label>
+        <input type="text" name="name" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Subject:</label>
+        <select name="subject">
+            <option>General</option>
+            <option>Project</option>
+        </select>
+
+        <label>Message:</label>
+        <textarea name="message" required></textarea>
+
+        <p>Preferred Contact:</p>
+        <input type="radio" name="contact" value="email"> Email
+        <input type="radio" name="contact" value="phone"> Phone
+
+        <br><br>
+
+        <input type="checkbox" name="agreement" required> I agree
+
+        <br><br>
+
+        <input type="submit">
+        <input type="reset">
+    </fieldset>
+</form>
+
+</form>
+<footer class="footer">
+    <p>&copy; 2026 Mohamed Gadelhak</p>
+    <!-- Footer Section -->
+
+  <p>
+    Contact me: 
+    <a href="mailto:mohammedgadelhak@gmail.com">E-mail</a>
+  </p>
+  <div class="social-icons">
+    <a href="https://youtube.com/@mohammedgadelhak6963?si=zqal4GkdyZgmeCka" target="_blank">
+      <img src="YT_logo.png" alt="YouTube" class="icon">
+    </a>
+    <a href="https://www.linkedin.com/in/mohammed-g-674045254/" target="_blank">
+      <img src="LN_logo.png" alt="LinkedIn" class="icon">
+    </a>
+  </div>
+</footer>
+
+<style>
+/* Footer styling */
+.footer {
+  background-color: #111; /* dark footer */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Social icon styling */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons .icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin: 0 5px;
+  transition: transform 0.2s;
+}
+
+.social-icons .icon:hover {
+  transform: scale(1.2);
+}
+</style>
